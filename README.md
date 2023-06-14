@@ -50,25 +50,28 @@ To easily integrate Jenkins with another tools, inside the Jenkins Server, go to
 **Manage Plugins**: Allow us to download different plugin of the technologies that we want to configure with Jenkins 
 For this project, we will install **JDK**: Eclipse Temurin Installer and OpenJDK native plugins , **OWASP**: Owasp dependency check plugins, **Docker**: Docker, Docker pipeline, Docker build step, cloudbees Docker build and publish; **Sonarqube**: sonarqube scanner.
 
-**Global configuration** allow us to configure all the plugins, we just downloaded to our jenkins server
+**Global configuration** allow us to configure all the plugins, we just downloaded to our jenkins server.
 
+**Configure JDK**
+Under JDK installation, Click on Add JDK and define the version of Java, we want to use for our pipeline
 
+![1](https://github.com/adrydry/Deploy-a-Java-Application-on-Jenkins/assets/102819001/5d73aebc-e9ec-4bd3-ab42-10833e5cb371)
 
+**Configure Maven**
 
+We just need to provide the version of Maven, we will use inside our pipeline.(Refer to the version downloaded on our EC2)
 
+![1](https://github.com/adrydry/Deploy-a-Java-Application-on-Jenkins/assets/102819001/084c18f2-3135-4e67-b1df-d34e207c6621)
 
+**Configure Dependency-check(OWASP)**
 
+![1](https://github.com/adrydry/Deploy-a-Java-Application-on-Jenkins/assets/102819001/8afb0ce3-bea3-4606-bd2d-af7c5e0eb2bd)
 
+**Configure Docker**
 
+![1](https://github.com/adrydry/Deploy-a-Java-Application-on-Jenkins/assets/102819001/15ef9ee9-fc59-4304-843c-e3e612d0a9bb)
 
-
-
-
-
-
-
-
-
+Save all the changes
 
 
 
