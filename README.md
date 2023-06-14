@@ -39,13 +39,18 @@ Install Suggested Plugins instead of Select Plugins to install because Jenkins b
 
 ## 7. Create First Admin User
 
+We create our Admin account is Jenkins is ready for use
 
+![1](https://github.com/adrydry/Deploy-a-Java-Application-on-Jenkins/assets/102819001/5b1dc41f-d693-46d8-abcf-b19d4b7602d3)
 
+## 8. Setting features in the Jenkins Server
 
+To easily integrate Jenkins with another tools, inside the Jenkins Server, go to **Manage Jenkins**.
 
+**Manage Plugins**: Allow us to download different plugin of the technologies that we want to configure with Jenkins 
+For this project, we will install **JDK**: Eclipse Temurin Installer and OpenJDK native plugins , **OWASP**: Owasp dependency check plugins, **Docker**: Docker, Docker pipeline, Docker build step, cloudbees Docker build and publish; **Sonarqube**: sonarqube scanner.
 
-
-
+**Global configuration** allow us to configure all the plugins, we just downloaded to our jenkins server
 
 
 
