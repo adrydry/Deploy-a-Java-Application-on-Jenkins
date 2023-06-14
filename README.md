@@ -47,10 +47,10 @@ We create our Admin account is Jenkins is ready for use
 
 To easily integrate Jenkins with another tools, inside the Jenkins Server, go to **Manage Jenkins**.
 
-**Manage Plugins**: Allow us to download different plugin of the technologies that we want to configure with Jenkins 
+- **Manage Plugins**: Allow us to download different plugin of the technologies that we want to configure with Jenkins 
 For this project, we will install **JDK**: Eclipse Temurin Installer and OpenJDK native plugins , **OWASP**: Owasp dependency check plugins, **Docker**: Docker, Docker pipeline, Docker build step, cloudbees Docker build and publish; **Sonarqube**: sonarqube scanner.
 
-**Global configuration** allow us to configure all the plugins, we just downloaded to our jenkins server.
+- **Global configuration** allow us to configure all the plugins, we just downloaded to our jenkins server.
 
 **Configure JDK**
 Under JDK installation, Click on Add JDK and define the version of Java, we want to use for our pipeline
@@ -73,16 +73,37 @@ We just need to provide the version of Maven, we will use inside our pipeline.(R
 
 Save all the changes
 
+- **Configure system**
+Is the place where we configure differents servers (Nexxus server, Sonarqube server,...) with Jenkins. There are many ways to do that but the more secure way is to go to Configure System.
+
+- **Manage nodes and cloud**
+
+Is the location where we can see which nodes/ VM/ Slaves will be used to run your project
+
+-**Configure Global Security**
+
+This is the security location of the jenkins server
+
+-**Credentials**
+We add credential
+
+Let's create our Job. 
+
+1- **Create a freestyle job**
+
+This is used to perform small task like building and generate an artifact. In this case, we don't have to write many code
+
+Specify the git repository of the code, the credentials and select Invoke top-level Maven targets with the goals clean compile and clean package
+
+2- **Pipeline job**
 
 
 
+## 9. Install Tomcat
 
+Our Tomcat server is up and running
 
-
-
-
-
-
+![1](https://github.com/adrydry/Deploy-a-Java-Application-on-Jenkins/assets/102819001/f5fd34c0-82ef-42a2-9e14-642cee3273e2)
 
 
 
