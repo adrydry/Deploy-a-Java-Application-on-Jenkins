@@ -97,6 +97,16 @@ Specify the git repository of the code, the credentials and select Invoke top-le
 
 2- **Pipeline job**
 
+Pipeline job is most required for complex project or project with many stages.
+
+**Configuration of our pipeline job**
+
+- click on Discard old builds
+- Write the script: There are 2 types of script: **scripted** and **declarative** which is very used by most of the companies.
+
+The different components of our script:
+**Stage 1: Clone the repository**. We will use the pipeline syntax to generate the url of the git branch
+
 
 
 ## 9. Install Tomcat
